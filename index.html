@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="bg-gray-100 font-sans leading-normal tracking-normal quicksand" onLoad="typeWriter()">
+<body class="bg-gray-100 text-gray-700 font-sans leading-normal tracking-normal quicksand" onLoad="typeWriter()">
 
     <nav id="header" class="fixed w-full z-10 top-0">
 
@@ -60,6 +60,12 @@
                     <li class="mr-3">
                         <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
                             href="https://www.linkedin.com/in/shannonjamalclarke/" target="_blank">View my CV</a>
+                    </li>
+                    <li class="mr-3">
+                        <button
+                            class="js-change-theme bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Dark mode
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -107,7 +113,8 @@
             <!--Lead Para-->
 
 
-            <p>I'm a software developer and extremely passionate about applying cutting-edge technologies to empower
+            <p class="text-gray-600">I'm a software developer and extremely passionate about applying cutting-edge
+                technologies to empower
                 individuals . Currently, I'm exploring blockchain solutions with <a
                     class="text-teal-500 no-underline hover:underline" href="https://www.polymath.network">Polymath</a>
                 and previously I co-founded <a class="text-teal-500 no-underline hover:underline"
@@ -268,7 +275,7 @@
     </div>
     <!--/container-->
 
-    <footer class="bg-white border-t border-gray-400 shadow">
+    <footer class="border-t border-gray-400 shadow">
         <div class="container max-w-4xl mx-auto flex py-8">
 
             <div class="w-full mx-auto flex flex-wrap">
@@ -322,6 +329,31 @@
                 setTimeout(typeWriter, speed);
             }
         }
+    </script>
+
+    <script>
+        //Toggle mode
+        const toggle = document.querySelector('.js-change-theme');
+        const body = document.querySelector('body');
+        //const profile = document.getElementById('profile');
+
+        toggle.addEventListener('click', () => {
+            if (body.classList.contains('text-gray-700')) {
+                toggle.innerHTML = "Light mode";
+
+                body.classList.remove('text-gray-700');
+                body.classList.add('text-gray-300');
+                body.classList.remove('bg-gray-100');
+                body.classList.add('bg-gray-900');
+            } else {
+                toggle.innerHTML = "Dark mode";
+                body.classList.remove('text-gray-300');
+                body.classList.add('text-gray-700');
+                body.classList.remove('bg-gray-900');
+                body.classList.add('bg-gray-100');
+
+            }
+        });
     </script>
 
     <script>

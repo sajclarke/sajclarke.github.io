@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shannon Clarke - Personal Website</title>
-    <meta name="author" content="name">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <title>Shannon Clarke - Software Solutions Architect</title>
+    <meta name="author" content="Shannon Clarke">
+    <meta name="description" content="Shannon Clarke - Software Solutions Architect">
+    <meta name="keywords" content="developer, electrical engineer, software, solutions, consultant">
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <!--Replace with your tailwind.css once created-->
 
@@ -32,7 +32,7 @@
         <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
 
             <div class="pl-4">
-                <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="#">
+                <a class="text-gray-600 text-base no-underline hover:no-underline font-extrabold text-xl" href="#">
                     Shannon Clarke
                 </a>
             </div>
@@ -49,16 +49,16 @@
 
             <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
                 id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center pb-5">
                     <li class="mr-3">
-                        <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="#">Home</a>
+                        <a class="inline-block text-gray-600 no-underline py-2 px-4" href="#">Home</a>
                     </li>
                     <!-- <li class="mr-3">
                         <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
                             href="#">link</a>
                     </li> -->
                     <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                        <a class="inline-block text-gray-600 no-underline py-2 px-4"
                             href="https://www.linkedin.com/in/shannonjamalclarke/" target="_blank">View my CV</a>
                     </li>
                     <li class="mr-3">
@@ -335,6 +335,8 @@
         //Toggle mode
         const toggle = document.querySelector('.js-change-theme');
         const body = document.querySelector('body');
+        var header = document.getElementById("header");
+        var navcontent = document.getElementById("nav-content");
         //const profile = document.getElementById('profile');
 
         toggle.addEventListener('click', () => {
@@ -345,13 +347,17 @@
                 body.classList.add('text-gray-300');
                 body.classList.remove('bg-gray-100');
                 body.classList.add('bg-gray-900');
+                navcontent.classList.remove('bg-gray-100');
+                navcontent.classList.add('bg-gray-900');
             } else {
                 toggle.innerHTML = "Dark mode";
                 body.classList.remove('text-gray-300');
                 body.classList.add('text-gray-700');
                 body.classList.remove('bg-gray-900');
-                body.classList.add('bg-gray-100');
 
+                body.classList.add('bg-gray-100');
+                navcontent.classList.remove('bg-gray-900');
+                navcontent.classList.add('bg-gray-100');
             }
         });
     </script>

@@ -10,8 +10,8 @@
     <meta name="description" content="Shannon Clarke - Software Solutions Architect">
     <meta name="keywords" content="developer, electrical engineer, software, solutions, consultant">
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <!--Replace with your tailwind.css once created-->
-
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
 
     <style>
@@ -20,306 +20,234 @@
         }
     </style>
 
+    
+
 </head>
 
-<body class="bg-gray-100 text-gray-700 font-sans leading-normal tracking-normal quicksand" onLoad="typeWriter()">
-
-    <nav id="header" class="fixed w-full z-10 top-0">
-
-        <div id="progress" class="h-1 z-20 top-0"
-            style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
-
-        <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
-
-            <div class="pl-4">
-                <a class="text-gray-600 text-base no-underline hover:no-underline font-extrabold text-xl" href="#">
-                    Shannon Clarke
-                </a>
+<body class="flex justify-center bg-gray-100 text-gray-700 font-sans leading-normal tracking-normal quicksand" onLoad="typeWriter()">
+    <div class="container flex flex-col md:flex-row w-full h-screen fixed">
+        <div class="md:w-1/5 w-full flex md:flex-col flex-row items-center justify-between md:justify-start bg-white p-3 shadow-xl">
+            <div class="md:mt-10">
+                <img class="hidden md:block w-40 h-40 rounded-lg mx-auto" src="images/headshot2.jpg" alt="Avatar of Author">
+                <p class="text-center md:text-xl md:pt-10 font-semibold">Shannon Clarke</p>
             </div>
-
-            <div class="block lg:hidden pr-4">
-                <button id="nav-toggle"
-                    class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-teal-500 appearance-none focus:outline-none">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
-                id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center pb-5">
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline py-2 px-4" href="#">Home</a>
-                    </li>
-                    <!-- <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                            href="#">link</a>
-                    </li> -->
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline py-2 px-4"
-                            href="https://www.linkedin.com/in/shannonjamalclarke/" target="_blank">View my CV</a>
-                    </li>
-                    <li class="mr-3">
-                        <button
-                            class="js-change-theme bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                            Dark mode
-                        </button>
-                    </li>
-                </ul>
-            </div>
+            
+            <ul class="list-none flex md:flex-col items-center p-1">
+                <li class="ml-2 md:mt-6 md:border-b border-indigo-500"><a href="#about">About</a></li>
+                <li class="ml-2 md:mt-6 md:border-b border-indigo-500"><a href="#projects">Projects</a></li>
+                <li class="ml-2 md:mt-6 md:border-b border-indigo-500"><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </nav>
-
-    <!--Container-->
-    <div class="container w-full md:max-w-3xl mx-auto pt-20">
-
-        <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
-
-            <!--Title-->
-            <!-- <div class="font-sans">
-                <span class="text-base md:text-sm text-teal-500 font-bold">&lt;<span> <a href="#"
-                            class="text-base md:text-sm text-teal-500 font-bold no-underline hover:underline">BACK TO
-                            BLOG</a></p>
-                        <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
-                            Welcome to Minimal Blog</h1>
-                        <p class="text-sm md:text-base font-normal text-gray-600">Published 19 February 2019</p>
-            </div> -->
-
-
-            <!--Post Content-->
-
+        <div class="md:w-4/5 w-full overflow-scroll p-5">
             <!--Author-->
-            <div class="flex w-full items-center font-sans px-4 py-12">
-                <img class="w-40 h-40 rounded-lg mr-4" src="images/headshot2.jpg" alt="Avatar of Author">
-                <div class="flex-1 px-2">
-                    <p class="text-base font-bold text-base md:text-xl leading-none mb-2">Hi there 👋 !</p>
-                    <p class="text-gray-600 text-xs md:text-base"> I'm an award-winning electrical engineer who
+            <section id="about" class="flex w-full items-center font-sans px-4 py-12">
+                <!-- <img class="hidden md:block w-40 h-40 rounded-lg mx-auto" src="images/headshot2.jpg" alt="Avatar of Author"> -->
+                <div class="flex-1 px-2 text-center">
+                    <!-- <p class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Hi there 👋 !</p> -->
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">👋 Hi! <span class="text-indigo-500" id="demo"></span></h1>
+                    <p class="text-gray-800 text-base"> I'm an award-winning electrical engineer who
                         transitioned
                         to a career in software
-                        development working with startups and various organizations. I also live in Beautiful
+                        development working with small businesses and various Government institutions. I am proud to live in Beautiful
                         Barbados!</p>
+                    
+                        <div class="flex mt-10 items-center text-center justify-around">
+                            <p class="flex flex-col md:flex-row items-center mr-2"><a href="https://www.linkedin.com/in/shannonjamalclarke/" target="_blank"><i class="fab fa-linkedin text-blue-800 fa-2x mr-2"></i>Linkedin</a></p>
+                            <p class="flex flex-col md:flex-row items-center mr-2"><a href="https://www.twitter.com/shannonclarkebb" target="_blank"><i class="fab fa-twitter text-blue-500 fa-2x mr-2"></i>Thoughts</a></p>
+                            <p class="flex flex-col md:flex-row items-center mr-2"><a href="https://www.github.com/sajclarke" target="_blank"><i class="fab fa-github text-gray-600 fa-2x mr-2"></i>Code</a></p>
+                        </div>
+
                 </div>
                 <!-- <div class="justify-end">
                     <a href="#"
                         class="bg-transparent border border-gray-500 hover:border-teal-500 text-xs text-gray-500 hover:text-teal-500 font-bold py-2 px-4 rounded-full">Read
                         More</a>
                 </div> -->
-            </div>
+            </section>
             <!--/Author-->
 
-
-            <!--Lead Para-->
-
-
-            <p class="text-gray-600">I'm a software developer and extremely passionate about applying cutting-edge
-                technologies to empower
-                individuals . Currently, I'm exploring blockchain solutions with <a
-                    class="text-teal-500 no-underline hover:underline" href="https://www.polymath.network">Polymath</a>
-                and previously I co-founded <a class="text-teal-500 no-underline hover:underline"
-                    href="https://www.carepoint.co">Carepoint!</a></p>
-
-            <blockquote class="border-l-4 border-teal-500 italic my-8 pl-8 md:pl-12" id="demo">
-            </blockquote>
-
-
-            <!-- <pre class="bg-gray-900 rounded text-white text-left p-2 md:p-4">
-				<code class="break-words whitespace-pre-wrap" id="demo">
+            <div class="flex flex-col text-center mb-20 py-12 w-full border-b border-t border-gray-400">
+                <h1 class="sm:text-3xl text-2xl title-font mb-4 text-indigo-500 font-light ">A few Clients I've worked with</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here are a few agencies I've worked with</p>
+                <div class="flex flex-wrap items-center justify-center">
+                    <img class="h-32 object-center object-cover m-3 rounded" src="images/logo_btmi.png"/>
+                    <img class="h-32 object-center object-cover m-3 rounded" src="images/logo_bidc.png"/>
+                    <img class="h-32 object-center object-cover m-3 rounded" src="images/logo_carpha.jpg"/>
+                    <img class="h-32 object-center object-cover m-3 rounded" src="images/logo_worldbankgroup.jpg"/>
                     
-				</code>
-			</pre> -->
-
-            <hr class="border-b-2 border-gray-300 mb-8 mx-4">
-            <h1 class="mt-10 pt-2 font-extrabold text-xl align-self uppercase text-center">
-                What I do
-            </h1>
-
-            <div class="md:flex py-10">
-                <div class="md:flex-shrink-0">
-                    <img class="rounded-lg md:w-56" src="images/developing.jpg"
-                        alt="Demonstrating mobile apps in Barbados">
                 </div>
-                <div class="mb-4 md:mt-0 md:ml-6">
-                    <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Programming</div>
-                    <a href="#"
-                        class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Building
-                        apps for startups and organizations</a>
-                    <p class="mt-2 text-gray-600">I enjoy spending much of my time developing solutions for companies,
-                        startups and organizations. I primarily utilize <a
-                            class="text-teal-500 no-underline hover:underline" href="https://reactjs.org">ReactJS</a>
-                        and <a class="text-teal-500 no-underline hover:underline" href="https://nodejs.org">NodeJS</a>
-                        for web applications as well
-                        as <a class="text-teal-500 no-underline hover:underline" href="https://reactjs.org">React
-                            Native</a> for mobile apps</p>
-                    <div class="justify-end mt-5">
-                        <a href="https://www.github.com/sajclarke" target="_blank"
-                            class="bg-transparent border border-gray-500 hover:border-teal-500 text-xs text-gray-500 hover:text-teal-500 font-bold py-2 px-4 rounded-full uppercase">View
-                            some of my work</a>
-                    </div>
-                </div>
-            </div>
+              </div>
 
 
+            <div class="flex flex-col text-center mb-10 w-full" id="projects">
+                <h1 class="sm:text-3xl text-2xl title-font mb-4 text-indigo-500 font-light">Projects</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here are a few select projects I've worked on recently</p>
+              </div>
 
-            <div class="md:flex py-10">
-
-                <div class="my-4 md:mt-0 md:ml-6">
-                    <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Training & Tutoring</div>
-                    <a href="#"
-                        class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Training
-                        others to utilize technology</a>
-                    <p class="mt-2 text-gray-600">I enjoy sharing my knowledge with others! I'm humbled to have been
-                        invited to provide training to various groups
-                        and organizations including Inter-American Development Bank, Caribbean Public Health Alliance,
-                        Barbados Investment Development
-                        Corporation, and the University of West Indies</p>
-                    <div class="justify-end mt-5">
-                        <a href="https://www.cbc.bb/2019/09/06/opportunities-through-international-partnership/"
-                            target="_blank"
-                            class="bg-transparent border border-gray-500 hover:border-teal-500 text-xs text-gray-500 hover:text-teal-500 font-bold py-2 px-4 rounded-full uppercase">Read
-                            More</a>
-                    </div>
-                </div>
-                <div class="md:flex-shrink-0">
-                    <img class="rounded-lg md:w-56" src="images/training.jpg"
-                        alt="Training developers to use Ethereum Blockchain at TechBeach Jamaica">
-                </div>
-            </div>
-
-            <div class="md:flex py-10">
-                <div class="md:flex-shrink-0">
-                    <img class="rounded-lg md:w-56" src="images/community.jpg" alt="UWI students with certificates">
-                </div>
-                <div class="my-4 md:mt-0 md:ml-6">
-                    <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Community</div>
-                    <a href="#"
-                        class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Leading
-                        nascent tech communities</a>
-                    <p class="mt-2 text-gray-600">Since transitioning to a career in software development, I
-                        have been
-                        curating a community of developers and tech entrepreneurs in Barbados and across the wider
-                        Caribbean. To this end, I have joined the <a class="text-teal-500 no-underline hover:underline"
-                            href="https://developers.facebook.com/developercircles/">Facebook Developer Circles</a>
-                        initiative as the lead for
-                        the
-                        Bridgetown chapter</p>
-                    <div class="justify-end mt-5">
-                        <a href="https://developers.facebook.com/developercircles/" target="_blank"
-                            class="bg-transparent border border-gray-500 hover:border-teal-500 text-xs text-gray-500 hover:text-teal-500 font-bold py-2 px-4 rounded-full uppercase">Learn
-                            More about Developer Circles</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-            <!--/ Post Content-->
-
-        </div>
-
-        <!--Tags -->
-        <!-- <div class="text-base md:text-sm text-gray-500 px-4 py-6">
-            Tags: <a href="#" class="text-base md:text-sm text-teal-500 no-underline hover:underline">Link</a> . <a
-                href="#" class="text-base md:text-sm text-teal-500 no-underline hover:underline">Link</a>
-        </div> -->
-
-        <!--Divider-->
-        <!-- <hr class="border-b-2 border-gray-400 mb-8 mx-4"> -->
-
-
-        <!--Subscribe-->
-        <!-- 
-            <hr class="border-b-2 border-gray-400 mb-8 mx-4"><div class="container px-4">
-            <div class="font-sans bg-white rounded-lg shadow-md p-4 text-center">
-                <h2 class="text-xl md:text-3xl">Want to chat with me?</h2>
-                <h3 class="font-normal text-gray-600 text-sm md:text-base">Get the latest posts
-                    delivered right to your inbox</h3>
-                <div class="w-full text-center pt-4">
-                    <form action="#">
-                        <div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
-                            <input type="email" placeholder="youremail@example.com"
-                                class="flex-1 mt-4 appearance-none border border-gray-400 rounded shadow-md p-3 text-gray-600 mr-2 focus:outline-none">
-                            <button type="submit"
-                                class="flex-1 mt-4 block md:inline-block appearance-none bg-teal-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-teal-400">Subscribe</button>
+            <section class="text-gray-700 body-font">
+                <div class="container px-5 py-8 mx-auto flex flex-col">
+                  <div class=" mx-auto">
+                    
+                    <div class="flex flex-col sm:flex-row mt-10">
+                      <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                        <!-- <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-300 text-gray-400">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                          </svg>
+                        </div> -->
+                        <div class="flex flex-col items-center text-center justify-center">
+                            <img class="h-32 rounded object-center object-cover shadow-lg" src="images/screenshot_dashboard.png" />
+                          <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Contact Tracing</h2>
+                          <!-- <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div> -->
+                          
+                          <!-- <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> -->
                         </div>
-                    </form>
+                      </div>
+                      <div class="flex items-center sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                        <p class="leading-relaxed text-lg mb-4">
+                            Rapidly developed and deployed a database-driven dashboard for the contact tracing team used by the Ministry of Health in Barbados
+                            </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div> 
-    <hr class="border-b-2 border-gray-400 mb-8 mx-4">-->
-        <!-- /Subscribe-->
-
-        <!--Divider-->
-
-
-        <!--Next & Prev Links-->
-        <!-- <div class="font-sans flex justify-between content-center px-4 pb-12">
-			<div class="text-left">
-				<span class="text-xs md:text-sm font-normal text-gray-600">&lt; Previous Post</span><br>
-				<p><a href="#" class="break-normal text-base md:text-sm text-teal-500 font-bold no-underline hover:underline">Blog title</a></p>
-			</div>
-			<div class="text-right">
-				<span class="text-xs md:text-sm font-normal text-gray-600">Next Post &gt;</span><br>
-				<p><a href="#" class="break-normal text-base md:text-sm text-teal-500 font-bold no-underline hover:underline">Blog title</a></p>
-			</div>
-		</div> -->
-
-
-        <!--/Next & Prev Links-->
-
-    </div>
-    <!--/container-->
-
-    <footer class="border-t border-gray-400 shadow">
-        <div class="container max-w-4xl mx-auto flex py-8">
-
-            <div class="w-full mx-auto flex flex-wrap">
-                <div class="flex w-full md:w-2/3 ">
-                    <div class="px-8">
-                        <h3 class="font-bold text-gray-900">About</h3>
-                        <p class="py-4 text-gray-600 text-sm">
-                            Hi there 👋 ! I'm an electrical engineer who transitioned to a career in software
-                            development working with startups and various organizations. I live in Barbados and I'm
-                            passionate about applying cutting-edge technology in education, personal health and energy
-                            conservation
+              </section>
+              <section class="text-gray-700 body-font">
+                <div class="container px-5 py-8 mx-auto flex flex-col">
+                  <div class=" mx-auto">
+                    
+                    <div class="flex flex-col sm:flex-row mt-10">
+                      <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                        <!-- <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-300 text-gray-400">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                          </svg>
+                        </div> -->
+                        <div class="flex flex-col items-center text-center justify-center">
+                            <img class="h-32 rounded object-center object-cover shadow-lg" src="images/screenshot_sims.gif" />
+                          <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Survey Information System</h2>
+                          <!-- <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div> -->
+                          <!-- <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> -->
+                        </div>
+                      </div>
+                      <div class="flex items-center sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                        <p class="leading-relaxed text-lg mb-4">
+                            Designed and developed a GIS (Geographical Information System) application facilitating remote access to land parcel data by the Ministry of Housing 
                         </p>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </section>
+              <section class="text-gray-700 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-col">
+                  <div class=" mx-auto">
+                    
+                    <div class="flex flex-col sm:flex-row mt-10">
+                      <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                        <!-- <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                          </svg>
+                        </div> -->
+                        <div class="flex flex-col items-center text-center justify-center">
+                            <img class="h-32 rounded object-center object-cover shadow-lg" src="images/screenshot_carpha.png" />
+                          <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Treatment Guidelines App</h2>
+                          <!-- <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div> -->
+                          <!-- <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> -->
+                        </div>
+                      </div>
+                      <div class="flex items-center sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                        <p class="leading-relaxed text-lg mb-4">
+                            Managed a team of developers to design and develop the software used by CARPHA (Caribbean Public Health Agency) to promote standardized treatment
+                            </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
-                <div class="flex w-full md:w-1/3">
-                    <div class="px-8">
-                        <h3 class="font-bold text-gray-900">Find Me Online</h3>
-                        <ul class="list-reset items-center text-sm pt-3">
-                            <li>
-                                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                    href="https://www.twitter.com/shannonclarkebb" target="_blank">Twitter</a>
-                            </li>
-                            <li>
-                                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                    href="https://www.github.com/sajclarke" target="_blank">Github</a>
-                            </li>
-                            <li>
-                                <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
-                                    href="https://www.linkedin.com/in/shannonjamalclarke/" target="_blank">LinkedIn</a>
-                            </li>
+              <section class="text-gray-700 body-font overflow-hidden">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="-my-8">
+                    <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                          <span class="tracking-widest font-semibold title-font text-gray-900 uppercase">Education</span>
+                        </div>
+                        <div class="md:flex-grow">
+                          <h2 class="text-2xl font-medium text-indigo-500  title-font mb-2">BSc Electrical and Computer Engineering</h2>
+                          <p class="leading-relaxed">University of the West Indies, St Augustine Campus</p>
+                         
+                        </div>
+                      </div>
+                    <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                          <span class="tracking-widest font-semibold title-font text-gray-900 uppercase">Leadership & Volunteering</span>
+                        </div>
+                        <div class="md:flex-grow">
+                          <!-- <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2> -->
+                          <ul class="leading-relaxed list-disc">
+                              <li>Community Lead - Facebook Developer Circle Bridgetown</li>
+                              <li>Free Programming Classes
+                                  <ul class="list-disc ml-10">
+                                      <li>Blockchain</li>
+                                      <li>Web Design</li>
+                                      <li>Artificial Intelligence</li>
+                                  </ul>
+                                </li>
+                          </ul>
+                          <!-- <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a> -->
+                        </div>
+                      </div>
+                    <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
+                      <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                        <span class="tracking-widest font-semibold title-font text-gray-900 uppercase">Achievements</span>
+                      </div>
+                      <div class="md:flex-grow">
+                        <!-- <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2> -->
+                        <ul class="leading-relaxed list-disc">
+                            <li>IDB Young Innovator Award</li>
+                            <li>Winner of Digital Jam Caribbean</li>
+                            <li>National Innovation Award</li>
                         </ul>
+                        <!-- <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a> -->
+                      </div>
                     </div>
+                    <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap" id="contact">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                          <span class="tracking-widest font-semibold title-font text-gray-900 uppercase">Get in Touch</span>
+                        </div>
+                        <div class="md:flex-grow">
+                          <!-- <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2> -->
+                          
+                          <a class="text-indigo-500 inline-flex items-center mt-4" href="mailto:shannonjamalclarke@gmail.com">
+                            shannonjamalclarke@gmail.com
+                          </a>
+                          <p class="text-base text-gray-600">Feel free to also contact me directly on Twitter, Linkedin or Skype</p>
+                        </div>
+                      </div>
+                  </div>
                 </div>
-            </div>
-
-
-
+              </section>
         </div>
-    </footer>
+    </div>
 
     <script>
         var i = 0;
-        var txt = 'Make things that people want! - YCombinator'; /* The text */
+        var txt = 'I build solutions that improve lives!'; /* The text */
         var speed = 50; /* The speed/duration of the effect in milliseconds */
 
         function typeWriter() {
@@ -330,85 +258,5 @@
             }
         }
     </script>
-
-    <script>
-        //Toggle mode
-        const toggle = document.querySelector('.js-change-theme');
-        const body = document.querySelector('body');
-        var header = document.getElementById("header");
-        var navcontent = document.getElementById("nav-content");
-        //const profile = document.getElementById('profile');
-
-        toggle.addEventListener('click', () => {
-            if (body.classList.contains('text-gray-700')) {
-                toggle.innerHTML = "Light mode";
-
-                body.classList.remove('text-gray-700');
-                body.classList.add('text-gray-300');
-                body.classList.remove('bg-gray-100');
-                body.classList.add('bg-gray-900');
-                navcontent.classList.remove('bg-gray-100');
-                navcontent.classList.add('bg-gray-900');
-            } else {
-                toggle.innerHTML = "Dark mode";
-                body.classList.remove('text-gray-300');
-                body.classList.add('text-gray-700');
-                body.classList.remove('bg-gray-900');
-
-                body.classList.add('bg-gray-100');
-                navcontent.classList.remove('bg-gray-900');
-                navcontent.classList.add('bg-gray-100');
-            }
-        });
-    </script>
-
-    <script>
-        /* Progress bar */
-        //Source: https://alligator.io/js/progress-bar-javascript-css-variables/
-        var h = document.documentElement,
-            b = document.body,
-            st = 'scrollTop',
-            sh = 'scrollHeight',
-            progress = document.querySelector('#progress'),
-            scroll;
-        var scrollpos = window.scrollY;
-        var header = document.getElementById("header");
-        var navcontent = document.getElementById("nav-content");
-
-        document.addEventListener('scroll', function () {
-
-            /*Refresh scroll % width*/
-            scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
-            progress.style.setProperty('--scroll', scroll + '%');
-
-            /*Apply classes for slide in bar*/
-            scrollpos = window.scrollY;
-
-            if (scrollpos > 10) {
-                header.classList.add("bg-white");
-                header.classList.add("shadow");
-                navcontent.classList.remove("bg-gray-100");
-                navcontent.classList.add("bg-white");
-            }
-            else {
-                header.classList.remove("bg-white");
-                header.classList.remove("shadow");
-                navcontent.classList.remove("bg-white");
-                navcontent.classList.add("bg-gray-100");
-
-            }
-
-        });
-
-
-        //Javascript to toggle the menu
-        document.getElementById('nav-toggle').onclick = function () {
-            document.getElementById("nav-content").classList.toggle("hidden");
-        }
-
-
-    </script>
-
 </body>
-
 </html>

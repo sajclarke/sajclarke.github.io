@@ -10,324 +10,442 @@
     <meta name="description" content="Shannon Clarke - Software Solutions Architect">
     <meta name="keywords" content="developer, electrical engineer, software, solutions, consultant">
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        rel="stylesheet">
     <!--Replace with your tailwind.css once created-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
     <style>
-        .quicksand {
-            font-family: 'Nunito', sans-serif;
+        .sitefont_1 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .sitefont_2 {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .sitefont_3 {
+            font-family: 'Roboto', sans-serif;
         }
     </style>
     <style>
-      .bg-dots{
-        background-image: url(https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5dea7a12bb83ab1f13040de5_cx-dots.svg);
-        background-repeat: no-repeat
-      }
+        .bg-dots {
+            background-image: url(https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5dea7a12bb83ab1f13040de5_cx-dots.svg);
+            background-repeat: no-repeat
+        }
 
-      .bg-circuits{
-        /* background-color: blue; */
-        /* background-image:url('/images/circuit-board.svg') */
-        background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='304' height='304'%3E%3Cpath fill='gray' fill-opacity='.1' d='M44.1 224a5 5 0 110 2H0v-2h44.1zm160 48a5 5 0 110 2H82v-2h122.1zm57.8-46a5 5 0 110-2H304v2h-42.1zm0 16a5 5 0 110-2H304v2h-42.1zm6.2-114a5 5 0 110 2h-86.2a5 5 0 110-2h86.2zm-256-48a5 5 0 110 2H0v-2h12.1zm185.8 34a5 5 0 110-2h86.2a5 5 0 110 2h-86.2zM258 12.1a5 5 0 11-2 0V0h2v12.1zm-64 208a5 5 0 11-2 0v-54.2a5 5 0 112 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 112 0zm16 16V64h46v2h-48V37.9a5 5 0 112 0zm-128 96V208h16v12.1a5 5 0 11-2 0V210h-16v-76.1a5 5 0 112 0zm-5.9-21.9a5 5 0 110 2H114v48H85.9a5 5 0 110-2H112v-48h12.1zm-6.2 130a5 5 0 110-2H176v-74.1a5 5 0 112 0V242h-60.1zm-16-64a5 5 0 110-2H114v48h10.1a5 5 0 110 2H112v-48h-10.1zM66 284.1a5 5 0 11-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 110 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 110-2H274v44.1a5 5 0 11-2 0V146h-10.1zm-64 96a5 5 0 110-2H208v-80h16v-14h-42.1a5 5 0 110-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 110 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 110-2H96v-42.1a5 5 0 112 0zM53.9 34a5 5 0 110-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 110-2H80V64h32V37.9a5 5 0 112 0zM101.9 82a5 5 0 110-2H128V37.9a5 5 0 112 0V82h-28.1zm16-64a5 5 0 110-2H146v44.1a5 5 0 11-2 0V18h-26.1zm102.2 270a5 5 0 110 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 112 0zM53.9 18a5 5 0 110-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 110-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 01-9.8-2h2.07a3 3 0 105.66 0H178v34h-18V21.9a5 5 0 112 0V32h14V2h-58.1zm0 96a5 5 0 110-2H137l32-32h39V21.9a5 5 0 112 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 11-2 0v-76.51L175.59 80H224V21.9a5 5 0 112 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 11-2 0v-99.51L184.59 96H300.1a5 5 0 013.9-3.9v2.07a3 3 0 000 5.66v2.07a5 5 0 01-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 11-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 110 2H0v-65.41l48-48V53.9a5 5 0 112 0zm-16 16v19.51l-34 34v-2.82l32-32V69.9a5 5 0 112 0zM12.1 32a5 5 0 110 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 110-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 110-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 110-2H64v-22.59L40.59 194H21.9a5 5 0 110-2h19.51L66 216.59V242H53.9zm150.2 14a5 5 0 110 2H96v-56.6L56.6 162H37.9a5 5 0 110-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 110-2H80v-46.59L48.59 178H21.9a5 5 0 110-2h27.51L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 013.9 3.9H3.83A3 3 0 000 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 016 97a5 5 0 01-6 4.9v-2.07a3 3 0 100-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 00-5.66 0h-2.07a5 5 0 019.8 0zM5.9 0A5.02 5.02 0 010 5.9V3.83A3 3 0 003.83 0H5.9zm294.2 0h2.07A3 3 0 00304 3.83V5.9a5 5 0 01-3.9-5.9zm3.9 300.1v2.07a3 3 0 00-1.83 1.83h-2.07a5 5 0 013.9-3.9zM97 100a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-48 32a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm32-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm16 96a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16-144a3 3 0 100-6 3 3 0 000 6zm0 32a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-96 0a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm96 0a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zM49 36a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zM33 68a3 3 0 100-6 3 3 0 000 6zm16-48a3 3 0 100-6 3 3 0 000 6zm0 240a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-16-32a3 3 0 100-6 3 3 0 000 6zm80-176a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm-16-16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm112 176a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zM17 180a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zM17 84a3 3 0 100-6 3 3 0 000 6zm32 64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6z'/%3E%3C/svg%3E")
-        /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E"); */
-      }
+        .bg-circuits {
+            /* background-color: blue; */
+            /* background-image:url('/images/circuit-board.svg') */
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='304' height='304'%3E%3Cpath fill='gray' fill-opacity='.1' d='M44.1 224a5 5 0 110 2H0v-2h44.1zm160 48a5 5 0 110 2H82v-2h122.1zm57.8-46a5 5 0 110-2H304v2h-42.1zm0 16a5 5 0 110-2H304v2h-42.1zm6.2-114a5 5 0 110 2h-86.2a5 5 0 110-2h86.2zm-256-48a5 5 0 110 2H0v-2h12.1zm185.8 34a5 5 0 110-2h86.2a5 5 0 110 2h-86.2zM258 12.1a5 5 0 11-2 0V0h2v12.1zm-64 208a5 5 0 11-2 0v-54.2a5 5 0 112 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 112 0zm16 16V64h46v2h-48V37.9a5 5 0 112 0zm-128 96V208h16v12.1a5 5 0 11-2 0V210h-16v-76.1a5 5 0 112 0zm-5.9-21.9a5 5 0 110 2H114v48H85.9a5 5 0 110-2H112v-48h12.1zm-6.2 130a5 5 0 110-2H176v-74.1a5 5 0 112 0V242h-60.1zm-16-64a5 5 0 110-2H114v48h10.1a5 5 0 110 2H112v-48h-10.1zM66 284.1a5 5 0 11-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 110 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 110-2H274v44.1a5 5 0 11-2 0V146h-10.1zm-64 96a5 5 0 110-2H208v-80h16v-14h-42.1a5 5 0 110-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 110 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 110-2H96v-42.1a5 5 0 112 0zM53.9 34a5 5 0 110-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 110-2H80V64h32V37.9a5 5 0 112 0zM101.9 82a5 5 0 110-2H128V37.9a5 5 0 112 0V82h-28.1zm16-64a5 5 0 110-2H146v44.1a5 5 0 11-2 0V18h-26.1zm102.2 270a5 5 0 110 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 112 0zM53.9 18a5 5 0 110-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 110-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 01-9.8-2h2.07a3 3 0 105.66 0H178v34h-18V21.9a5 5 0 112 0V32h14V2h-58.1zm0 96a5 5 0 110-2H137l32-32h39V21.9a5 5 0 112 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 11-2 0v-76.51L175.59 80H224V21.9a5 5 0 112 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 11-2 0v-99.51L184.59 96H300.1a5 5 0 013.9-3.9v2.07a3 3 0 000 5.66v2.07a5 5 0 01-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 11-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 110 2H0v-65.41l48-48V53.9a5 5 0 112 0zm-16 16v19.51l-34 34v-2.82l32-32V69.9a5 5 0 112 0zM12.1 32a5 5 0 110 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 110-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 110-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 110-2H64v-22.59L40.59 194H21.9a5 5 0 110-2h19.51L66 216.59V242H53.9zm150.2 14a5 5 0 110 2H96v-56.6L56.6 162H37.9a5 5 0 110-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 110-2H80v-46.59L48.59 178H21.9a5 5 0 110-2h27.51L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 013.9 3.9H3.83A3 3 0 000 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 016 97a5 5 0 01-6 4.9v-2.07a3 3 0 100-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 00-5.66 0h-2.07a5 5 0 019.8 0zM5.9 0A5.02 5.02 0 010 5.9V3.83A3 3 0 003.83 0H5.9zm294.2 0h2.07A3 3 0 00304 3.83V5.9a5 5 0 01-3.9-5.9zm3.9 300.1v2.07a3 3 0 00-1.83 1.83h-2.07a5 5 0 013.9-3.9zM97 100a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-48 32a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm32-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm16 96a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16 16a3 3 0 100-6 3 3 0 000 6zm16-144a3 3 0 100-6 3 3 0 000 6zm0 32a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-96 0a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm16-32a3 3 0 100-6 3 3 0 000 6zm96 0a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm0-16a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zm-16 0a3 3 0 100-6 3 3 0 000 6zM49 36a3 3 0 100-6 3 3 0 000 6zm-32 0a3 3 0 100-6 3 3 0 000 6zm32 16a3 3 0 100-6 3 3 0 000 6zM33 68a3 3 0 100-6 3 3 0 000 6zm16-48a3 3 0 100-6 3 3 0 000 6zm0 240a3 3 0 100-6 3 3 0 000 6zm16 32a3 3 0 100-6 3 3 0 000 6zm-16-64a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm-16-32a3 3 0 100-6 3 3 0 000 6zm80-176a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zm-16-16a3 3 0 100-6 3 3 0 000 6zm32 48a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm112 176a3 3 0 100-6 3 3 0 000 6zm-16 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zM17 180a3 3 0 100-6 3 3 0 000 6zm0 16a3 3 0 100-6 3 3 0 000 6zm0-32a3 3 0 100-6 3 3 0 000 6zm16 0a3 3 0 100-6 3 3 0 000 6zM17 84a3 3 0 100-6 3 3 0 000 6zm32 64a3 3 0 100-6 3 3 0 000 6zm16-16a3 3 0 100-6 3 3 0 000 6z'/%3E%3C/svg%3E")
+                /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E"); */
+        }
     </style>
-    
+
+    <!-- MailMunch for ShannonClarke -->
+    <!-- Paste this code right before the </head> tag on every page of your site. -->
+    <script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script"
+        data-mailmunch-site-id="801567" async="async"></script>
 
 </head>
 
-<body class="flex justify-center bg-gray-100 text-gray-700 font-sans leading-normal tracking-normal quicksand" onLoad="typeWriter()">
-    
-  <div class="container flex flex-col md:flex-row w-full h-screen fixed">
-    <div class="fixed md:w-8/12 ml-auto md:mr-10 lg:mr-24 rounded-lg z-50 text-white p-3 bottom-0 inset-x-0 ">
-      <div class="flex items-center justify-between bg-indigo-600 mb-10 p-2 px-4 rounded-lg h-16 shadow-xl">
-        <div class="flex items-center">
-          <i class="far fa-question-circle fa-lg mr-2 bg-indigo-800 p-2 rounded"></i>
-          <p class="text-sm md:text-base leading-5">Do you need help with your digital project?</p>
+<body
+    class="justify-center bg-white text-gray-700 font-sans leading-normal tracking-normal sitefont_1">
+    <header class="text-white body-font" style="background-color: #225db5;">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center mb-4 md:mb-0">
+
+                <span class="ml-3 text-xl">Shannonclarke.com</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <!-- <a class="mr-5 hover:text-gray-900">Home</a> -->
+                <a class="mr-3 hover:text-gray-900" href="#training"><span
+                        class="hidden md:inline-block">Free&nbsp;</span>Webinar</a>
+                <a class="mr-3 hover:text-gray-900" href="#projects">Projects</a>
+                <a class="mr-3 hover:text-gray-900" target="_blank"
+                    href="https://calendly.com/shannonclarke-developer/30min">Work with Me</a>
+            </nav>
+            <!-- <button
+                class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Button
+                <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1"
+                    viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button> -->
         </div>
-        
-        <a href="mailto:shannonclarke.developer@gmail.com" class="bg-white text-indigo-600 text-sm md:text-base leading-5 font-medium  p-2 rounded">Contact <span class="hidden md:inline">Me</span></a>
-      </div>
+    </header>
+
+
+    <div class="w-full text-white" style="background-color: #225db5;">
+        <div class="h-full mx-auto flex flex-col-reverse md:flex-row pt-16">
+            <div class="w-full mx: w-1/2">
+                <div class="flex items-end justify-end">
+                    <!-- <div class="max-w-lg"> -->
+                    <img src="/images/headshot_transp02.png" alt="" class="w-full rounded-md">
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="w-full mx:w-1/2 flex items-center justify-center">
+                <div class="p-5">
+                    <p class="text-md uppercase">Hello! I'm a
+                        Software Developer!</p>
+                    <h1
+                        class="animate__animated animate__fadeInRight text-4xl uppercase md:text-3xl lg:text-5xl font-semibold leading-normal tracking-tighter my-4">
+                        I build custom software to help grow your business
+                    </h1>
+                    <h2 class="text-lg opacity-75 font-normal mb-8">
+                        I'm available for freelance projects and consultant roles
+                    </h2>
+                    <div class="animate__animated animate__bounce animate__delay-5s">
+                        <a href="https://calendly.com/shannonclarke-developer/30min" target="_blank"
+                            class="bg-blue-800 hover:bg-blue-600 text-lg md:text-2xl leading-none text-white font-normal h-12 px-8 py-2 rounded-full whitespace-no-wrap mb-2 sm:mb-0 sm:mr-2">
+                            Schedule Free Consultation
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="bg-white">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="fill-current">
+                <rect x="0.5" y="0.5" width="50" height="50" stroke='#fff' fill="none"
+                    stroke-dasharray="0,50,150" />
+                <path fill="#225db5" fill="none" d="M0,64L80,85.3C160,107,320,149,480,154.7C640,160,800,128,960,112C1120,96,1280,
+96,1360,96L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,
+640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+            </svg>
+
+        </div> -->
     </div>
-        <div class="md:w-1/5 w-full flex md:flex-col flex-row items-center justify-between md:justify-start bg-circuits p-3 shadow-xl">
-            <div class="md:mt-10">
-                <img class="hidden md:block w-40 h-40 rounded-lg mx-auto" src="images/headshot2.jpg" alt="Shannon Clarke">
-                <p class="text-center md:text-xl md:pt-10 font-semibold">Shannon Clarke</p>
-            </div>
-            
-            <ul class="list-none flex md:flex-col items-center p-1">
-                <li class="ml-2 md:mt-6 md:border-b border-indigo-500"><a href="#about">About</a></li>
-                <li class="ml-2 md:mt-6 md:border-b border-indigo-500"><a href="#projects">Projects</a></li>
-                <li class="ml-2 md:mt-6 md:border-b border-indigo-500"><a href="#contact">Contact</a></li>
-            </ul>
+    <section class="text-gray-700 body-font">
+        <div class="container mx-auto px-5 py-6 text-center justify-center items-center">
+            <!-- <h1 class="sm:text-3xl text-2xl title-font mb-4 text-indigo-500 font-light ">A few Clients I've worked with</h1> -->
+            <h2 class="title-font sm:text-4xl pt-10 text-3xl mb-4 font-medium text-gray-900">A few
+                Agencies I've worked with</h2>
+            <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here are a few agencies I've worked with</p> -->
+            <div class="flex items-center justify-center flex-wrap">
+                <img class="object-center object-cover m-3 rounded" src="images/logo_btmi.png" />
+                <img class="h-32 object-center object-cover m-3 rounded"
+                    src="images/logo_bidc.png" />
+                <img class="h-32 object-center object-cover m-3 rounded"
+                    src="images/logo_carpha.jpg" />
+                <img class="h-32 object-center object-cover m-3 rounded"
+                    src="images/logo_worldbankgroup.jpg" />
 
-            <section class="hidden md:inline flex flex-col justify-center items-center text-center py-12 w-full">
-              <h1 class="lg:w-2/3 mx-auto leading-relaxed text-lg">Find me online</h1>
-              <div class="w-1/2 mx-auto flex flex-wrap items-center justify-center text-center justify-around">  
-                  <a href="https://www.linkedin.com/in/shannonjamalclarke/" target="_blank"><p class="flex flex-col md:flex-row justify-center items-center mt-6 p-2 rounded bg-blue-800 text-white"><i class="fab fa-linkedin fa-lg py-2 md:py-0 md:pr-2 md:mr-2 md:border-r-2 border-opacity-25 border-white"></i>Linkedin</p></a>
-                  <a href="https://www.twitter.com/shannonclarkebb" target="_blank"><p class="flex flex-col md:flex-row justify-center items-center mt-6 p-2 rounded bg-blue-500 text-white"><i class="fab fa-twitter fa-lg py-2 md:py-0 md:pr-2 md:mr-2 md:border-r-2 border-opacity-25 border-white"></i>Twitter</p></a>
-                  <a href="https://www.github.com/sajclarke" target="_blank"><p class="flex flex-col md:flex-row justify-center items-center mt-6 p-2 rounded bg-gray-600 text-white"><i class="fab fa-github fa-lg py-2 md:py-0 md:pr-2 md:mr-2 md:border-r-2 border-opacity-25 border-white"></i>Github</p></a>
-              </div>
-            </section>
+            </div>
         </div>
-        <div class="md:w-4/5 w-full overflow-scroll">
-<div class="p-5">
-  
-          <div class="bg-gray-100">
-            <div id="about" class="container mx-auto px-6 py-8">
-                <div class="lg:flex items-center">
-                    <div class="lg:w-1/2">
-                        <h2 class="text-indigo-500 text-3xl font-normal">Who I am</h2>
-                        <p class="text-gray-700 text-lg lg:max-w-md mt-4">I build technology solutions to empower digital transformation in Government institutions and various small businesses. </p>
-                          <!-- <p class="text-gray-700 text-lg lg:max-w-md mt-4">I've been humbled to win international awards as I transitioned from my career in electrical engineering (7 years) to  software
-                          development (8+ years). </p>
-                        <div class="flex items-center -mx-2 mt-6">
-                          <a href="#" aria-label="Twitter" class="mx-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-gray-300 hover:text-gray-500 h-6 w-6">
-                                    <path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6-18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6.8 15 2.5 22.1-80.5-4-151.9-42.6-199.6-101.3-8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7-16-.4-31-4.8-44-12.1v1.2c0 47 33.4 86.1 77.7 95-8.1 2.2-16.7 3.4-25.5 3.4-6.2 0-12.3-.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3-33.1 26-74.9 41.5-120.3 41.5-7.8 0-15.5-.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-.1-8.4-.3-12.5C462.6 146 479 129 492 109.5z"></path>
-                                </svg></a><a href="#" aria-label="Facebook" class="mx-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-gray-300 hover:text-gray-500 h-6 w-6">
-                                    <path d="M426.8 64H85.2C73.5 64 64 73.5 64 85.2v341.6c0 11.7 9.5 21.2 21.2 21.2H256V296h-45.9v-56H256v-41.4c0-49.6 34.4-76.6 78.7-76.6 21.2 0 44 1.6 49.3 2.3v51.8h-35.3c-24.1 0-28.7 11.4-28.7 28.2V240h57.4l-7.5 56H320v152h106.8c11.7 0 21.2-9.5 21.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z"></path>
-                                </svg></a><a href="#" aria-label="Linkden" class="mx-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-gray-300 hover:text-gray-500 h-6 w-6">
-                                    <path d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z"></path>
-                                </svg></a><a href="#" aria-label="Github" class="mx-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-gray-300 hover:text-gray-500 h-6 w-6">
-                                    <path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9 1.4.3 2.6.4 3.8.4 8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1-8.4 1.9-15.9 2.7-22.6 2.7-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1 10.5 0 20-3.4 25.6-6 2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8 0 0 1.6-.5 5-.5 8.1 0 26.4 3.1 56.6 24.1 17.9-5.1 37-7.6 56.1-7.7 19 .1 38.2 2.6 56.1 7.7 30.2-21 48.5-24.1 56.6-24.1 3.4 0 5 .5 5 .5 12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5 1.2 0 2.6-.1 4-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"></path>
-                                </svg></a>
-                              </div> -->
-                    </div>
-                    <div class="mt-8 lg:mt-0 lg:w-1/2">
-                        <div class="flex items-center justify-center">
-                            <div class="max-w-lg"><img src="/images/banner_shannon.png" alt="" class="w-full h-64 object-cover object-center rounded-md"></div>
-                        </div>
+    </section>
+
+    <section>
+        <div class="flex mx-auto w-full px-16 py-10 -mt-5">
+            <div class="bg-dots">
+                <div class="shadow-2xl z-10 rounded-full mt-6 ml-4">
+
+                    <div class="text-2xl p-10 bg-white"><img alt="quote" class="float-left mr-1"
+                            src="https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5cf8fb1f994fb7168d0d66fb_quote-intro.svg">
+                        A small business website should drive online sales by acting as a 24/7
+                        employee converting curious onlookers to
+                        interested potential customers.
                     </div>
                 </div>
             </div>
         </div>
-            <!--Author-->
-            <!-- <section id="about" class="flex w-full items-center font-sans px-4 py-12">
-                <div class="flex-1 px-2 text-center">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">👋 Hi! <span class="text-indigo-500" id="demo"></span></h1>
-                    <img class="md:hidden w-40 h-40 rounded-lg mx-auto" src="images/headshot2.jpg" alt="Avatar of Author">
-                    <p class="text-gray-800 text-base"> I'm an award-winning electrical engineer who
-                        transitioned
-                        to a career in software
-                        development working with small businesses and various Government institutions. I am proud to live in Beautiful
-                        Barbados!</p>
-                </div>
-            </section> -->
-            <!--/Author-->
+    </section>
 
-            
+    <section class="text-gray-700 body-font" id="training">
+        <div class="container mx-auto flex px-16 py-6 md:flex-row flex-col items-center">
 
-            <div class="flex flex-col text-center mb-20 py-12 w-full border-b border-t border-gray-400">
-                <!-- <h1 class="sm:text-3xl text-2xl title-font mb-4 text-indigo-500 font-light ">A few Clients I've worked with</h1> -->
-                <h2 class="text-indigo-500 text-3xl font-normal">A few Agencies I've worked with</h2>
-                <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here are a few agencies I've worked with</p> -->
-                <div class="flex items-center justify-start overflow-x-scroll">
-                    <img class="h-32 object-center object-cover m-3 rounded" src="images/logo_btmi.png"/>
-                    <img class="h-32 object-center object-cover m-3 rounded" src="images/logo_bidc.png"/>
-                    <img class="h-32 object-center object-cover m-3 rounded" src="images/logo_carpha.jpg"/>
-                    <img class="h-32 object-center object-cover m-3 rounded" src="images/logo_worldbankgroup.jpg"/>
-                    
-                </div>
-              </div>
+            <div
+                class="animate__animated animate__fadeInLeft lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
 
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                    Ready to take your business online but don't know where to start?</h1>
+                <p class="mb-8 leading-relaxed">In partnership with the Barbados Investment and
+                    Development Corporation, I will be again hosting the WebStart training programme
+                    to help small business owners to navigate the journey to profitably take their
+                    business and grow their sales online!
+                </p>
+                <div
+                    class="flex w-full md:justify-start justify-center animate__animated animate__wobble animate__delay-5s">
+                    <!-- <input
+                        class="bg-gray-100 rounded mr-4 border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 lg:w-full xl:w-1/2 w-2/4"
+                        placeholder="Placeholder" type="text"> -->
+                    <a href="#newsletter"
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                        Coming Soon...</a>
+                </div>
+                <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Want to be notified when it's
+                    ready? Sign up for our <a href="#newsletter"
+                        class="text-blue-500 hover:underline">Newsletter</a>
+                </p>
 
-            <div class="flex flex-col text-center mb-10 w-full" id="projects">
-                <h1 class="sm:text-3xl text-2xl title-font mb-4 text-indigo-500 font-light">Projects</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here are a few select projects I've worked on recently</p>
-              </div>
-
-            <section class="text-gray-700 body-font">
-                <div class="container px-5 py-8 mx-auto flex flex-col">
-                  <div class=" mx-auto">
-                    
-                    <div class="flex flex-col sm:flex-row mt-10">
-                      <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                        <!-- <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-300 text-gray-400">
-                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                          </svg>
-                        </div> -->
-                        <div class="flex flex-col items-center text-center justify-center">
-                            <img class="h-32 rounded object-center object-cover shadow-lg" src="images/screenshot_dashboard.png" />
-                          <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Contact Tracing</h2>
-                          <!-- <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div> -->
-                          
-                          <!-- <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> -->
-                        </div>
-                      </div>
-                      <div class="flex items-center sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                        <p class="leading-relaxed text-lg mb-4">
-                            Rapidly developed and deployed a database-driven dashboard for the contact tracing team used by the Ministry of Health in Barbados
-                            </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section class="text-gray-700 body-font">
-                <div class="container px-5 py-8 mx-auto flex flex-col">
-                  <div class=" mx-auto">
-                    
-                    <div class="flex flex-col sm:flex-row mt-10">
-                      <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                        <!-- <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-300 text-gray-400">
-                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                          </svg>
-                        </div> -->
-                        <div class="flex flex-col items-center text-center justify-center">
-                            <img class="h-32 rounded object-center object-cover shadow-lg" src="images/screenshot_sims.gif" />
-                          <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Survey Information System</h2>
-                          <!-- <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div> -->
-                          <!-- <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> -->
-                        </div>
-                      </div>
-                      <div class="flex items-center sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                        <p class="leading-relaxed text-lg mb-4">
-                            Designed and developed a GIS (Geographical Information System) application facilitating remote access to land parcel data by the Ministry of Housing 
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section class="text-gray-700 body-font">
-                <div class="container px-5 py-24 mx-auto flex flex-col">
-                  <div class=" mx-auto">
-                    
-                    <div class="flex flex-col sm:flex-row mt-10">
-                      <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                        <!-- <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                          </svg>
-                        </div> -->
-                        <div class="flex flex-col items-center text-center justify-center">
-                            <img class="h-32 rounded object-center object-cover shadow-lg" src="images/screenshot_carpha.png" />
-                          <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Treatment Guidelines App</h2>
-                          <!-- <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div> -->
-                          <!-- <p class="text-base text-gray-600">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> -->
-                        </div>
-                      </div>
-                      <div class="flex items-center sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                        <p class="leading-relaxed text-lg mb-4">
-                            Managed a team of developers to design and develop the software used by CARPHA (Caribbean Public Health Agency) to promote standardized treatment
-                            </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section class="text-gray-600 body-font text-lg overflow-hidden">
-                <div class="container px-5 py-24 mx-auto">
-                  <div class="-my-8">
-                    <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                          <span class="tracking-widest font-semibold title-font text-gray-900 text-lg uppercase">Education</span>
-                        </div>
-                        <div class="md:flex-grow">
-                          <h2 class="text-2xl font-medium text-indigo-500  title-font mb-2">BSc Electrical and Computer Engineering</h2>
-                          <p class="leading-relaxed">University of the West Indies, St Augustine Campus</p>
-                         
-                        </div>
-                      </div>
-                    <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                          <span class="tracking-widest font-semibold title-font text-gray-900 uppercase">Leadership & Volunteering</span>
-                        </div>
-                        <div class="md:flex-grow">
-                          <!-- <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2> -->
-                          <ul class="leading-relaxed list-disc">
-                              <li>Community Lead - Facebook Developer Circle Bridgetown</li>
-                              <li>Free Programming Classes
-                                  <ul class="list-disc ml-10">
-                                      <li>Blockchain</li>
-                                      <li>Web Design</li>
-                                      <li>Artificial Intelligence</li>
-                                  </ul>
-                                </li>
-                          </ul>
-                          <!-- <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M5 12h14"></path>
-                              <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                          </a> -->
-                        </div>
-                      </div>
-                    <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap">
-                      <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <span class="tracking-widest font-semibold title-font text-gray-900 uppercase">Achievements</span>
-                      </div>
-                      <div class="md:flex-grow">
-                        <!-- <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2> -->
-                        <ul class="leading-relaxed list-disc">
-                            <li>IDB Young Innovator Award</li>
-                            <li>Winner of Digital Jam Caribbean</li>
-                            <li>National Innovation Award</li>
-                        </ul>
-                        <!-- <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                          </svg>
-                        </a> -->
-                      </div>
-                    </div>
-                    <div class="py-8 flex border-t-2 border-gray-200 flex-wrap md:flex-no-wrap" id="contact">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                          <span class="tracking-widest font-semibold title-font text-gray-900 uppercase">Get in Touch</span>
-                        </div>
-                        <div class="md:flex-grow">
-                          <!-- <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2> -->
-                          
-                          <a class="text-indigo-500 inline-flex items-center mt-4" href="mailto:shannonjamalclarke@gmail.com">
-                            shannonjamalclarke@gmail.com
-                          </a>
-                          <p class="text-base text-gray-600">Feel free to also contact me directly on Twitter, Linkedin or Skype</p>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </section>
-              <section class="md:hidden flex flex-col justify-center items-center text-center py-3 w-full">
-                <h1 class="lg:w-2/3 mx-auto leading-relaxed text-lg">Find me online</h1>
-                <div class="w-full flex flex-wrap items-center justify-center text-center justify-around">  
-                    <a href="https://www.linkedin.com/in/shannonjamalclarke/" target="_blank"><p class="flex flex-col md:flex-row justify-center items-center mt-6 p-2 rounded bg-blue-800 text-white"><i class="fab fa-linkedin fa-lg py-2 md:py-0 md:pr-2 md:mr-2 md:border-r-2 border-opacity-25 border-white"></i>Linkedin</p></a>
-                    <a href="https://www.twitter.com/shannonclarkebb" target="_blank"><p class="flex flex-col md:flex-row justify-center items-center mt-6 p-2 rounded bg-blue-500 text-white"><i class="fab fa-twitter fa-lg py-2 md:py-0 md:pr-2 md:mr-2 md:border-r-2 border-opacity-25 border-white"></i>Twitter</p></a>
-                    <a href="https://www.github.com/sajclarke" target="_blank"><p class="flex flex-col md:flex-row justify-center items-center mt-6 p-2 rounded bg-gray-600 text-white"><i class="fab fa-github fa-lg py-2 md:py-0 md:pr-2 md:mr-2 md:border-r-2 border-opacity-25 border-white"></i>Github</p></a>
-                </div>
-              </section>
             </div>
-              <div class="p-3">
-                <div class="flex justify-center items-center">
-                  <p class="text-gray-600 text-sm text-center sm:text-left">&copy; 2020 Shannon Clarke —
-                    <a class="text-indigo-700 inline-flex items-center mt-4" href="mailto:shannonjamalclarke@gmail.com">
-                      shannonjamalclarke@gmail.com
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero"
+                    src="/images/undraw01.png">
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-700 body-font" id="projects">
+        <div class="container px-5 py-24 mx-auto">
+            <h2
+                class="title-font sm:text-4xl pt-10 text-3xl mb-4 font-medium text-gray-900 text-center">
+                Projects</h2>
+            <div class="flex flex-wrap justify-center -m-4">
+
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="images/screenshot_dashboard.png" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                            Web Application</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Contact
+                            Tracing
+                        </h2>
+                        <p class="leading-relaxed text-base">Rapidly developed and deployed a
+                            database-driven dashboard for the contact
+                            tracing team used by the Ministry of Health in Barbados</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/screenshot_sims.gif" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                            Web application</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">GeoInformatics
+                            App</h2>
+                        <p class="leading-relaxed text-base">Designed and developed a GIS
+                            (Geographical Information System) application
+                            facilitating remote access to land parcel data by the Ministry of
+                            Housing</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="/images/screenshot_carpha.png" alt="content">
+                        <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                            Mobile Application</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Treatment
+                            Guidelines
+                        </h2>
+                        <p class="leading-relaxed text-base">Managed a team of developers to design
+                            and develop the software used by CARPHA
+                            (Caribbean Public Health Agency) to promote standardized treatment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-700 body-font" id="newsletter">
+        <div class="container px-5 py-6 mx-auto">
+            <div class="md:w-1/2 mx-auto">
+                <div class='mailmunch-forms-widget-923470'></div>
+            </div>
+
+        </div>
+    </section>
+    <section class="text-gray-700 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">What Others
+                Say
+            </h1>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-indigo-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Prior to Shannon’s arrival, the project was
+                            stalled by a lack of technical know-how, effort and
+                            innovation. Shannon was able to bring inject new life not only to the
+                            software development
+                            component, but was able to add value by creatively resolving several
+                            challenges and providing
+                            professional advice.</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/106x106"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Shane
+                                    Pinder</span>
+                                <span class="text-gray-500 text-sm uppercase">Assistant
+                                    Vice-President</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-blue-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                            <path
+                                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                            </path>
+                        </svg>
+                        <p class="leading-relaxed mb-6">Carepoint really does address a area of
+                            great deficiency in existing clinical practice. The gap between
+                            visits is really where all stuff goes chaotic when it comes to patient
+                            management. This is the
+                            appointment bridge that we desperately need</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/107x107"
+                                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+                                <span class="title-font font-medium text-gray-900">Dr Jamario
+                                    Skeete</span>
+                                <span class="text-gray-500 text-sm">Medical Doctor</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-gray-700 body-font">
+        <!-- <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+
+            <div
+                class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                        CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                        CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                        CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+                        CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div> -->
+        <div class="bg-gray-200">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 —
+                    <a href="https://twitter.com/shannonclarkebb" rel="noopener noreferrer"
+                        class="text-gray-600 ml-1" target="_blank">@shannonclarkebb</a>
+                </p>
+                <!-- <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z">
+                            </path>
+                        </svg>
                     </a>
-                  </p>
-                 
-                </div>
-              </div>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                            viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="0" class="w-5 h-5"
+                            viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span> -->
+            </div>
         </div>
-    </div>
-
-    <script>
-        var i = 0;
-        var txt = 'I build solutions that improve lives!'; /* The text */
-        var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("demo").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-    </script>
+    </footer>
 </body>
+
 </html>
